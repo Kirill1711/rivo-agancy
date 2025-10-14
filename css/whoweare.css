@@ -1,0 +1,62 @@
+.who-we-are {
+    width: 100%;
+    height: 100%;
+    background-color: #EEEEF0;
+}
+.who-we-are__wrapper {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.who-we-are__video {
+    width: 690px;
+    height: 380px;
+}
+
+.who-we-are__container {
+    width: 690px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.who-we-are__title {
+    font-family: 'RoadRadio';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: #1A1A1A;
+}
+.who-we-are__text {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    color: #818181;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .who-we-are__video, .who-we-are__container {
+        width: 570px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .who-we-are__video, .who-we-are__container {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .who-we-are__wrapper {
+        flex-direction: column;
+        gap: 2em;
+    }
+    .who-we-are__video, .who-we-are__container {
+        width: 100%;
+    }
+}

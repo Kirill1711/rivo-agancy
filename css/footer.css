@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    height: 100%;
+    padding: 4em 0;
+}
+
+.footer__menu_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0;
+    background-color: #F3F3F5;
+    border-bottom: 1px solid #D8D7DB;
+}
+.footer__menu {
+    width: 100%;
+    height: 64px;
+    margin: auto;
+    border-bottom: 1px solid #D8D7DB;
+}
+.copiright {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
+.copiright p {
+    margin: 10px;
+    font-family: 'Giloy';
+    font-size: 15px;
+    line-height: 100%;
+    color: #3F3F3F;
+    font-weight: 500;
+}
+.copiright a {
+    margin: 10px;
+    font-family: 'Giloy';
+    font-size: 15px;
+    line-height: 100%;
+    color: #3F3F3F;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.copiright a::after {
+    background-color: #1a1a1a;
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: 0.3s ease-in-out; 
+}
+.copiright a:hover::after {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+       footer {
+        padding: 2em 0;
+    }
+    .footer__menu {
+        height: 50px;
+    }
+    .footer__menu_block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

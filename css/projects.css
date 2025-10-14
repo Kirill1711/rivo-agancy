@@ -1,0 +1,113 @@
+.projects {
+    width: 100%;
+    height: 100%;
+    background-color: #F3F3F5;
+    padding: 4em 0 2em 0;
+}
+.projects__inner {
+    margin: 4em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects__item {
+    height: 380px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #FFFFFF, #FFFFFF, #1A1A1A);
+    cursor: pointer;
+    position: relative;
+}
+.projects__item img {
+    opacity: 40%;
+}
+
+
+.projects__text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.projects__text p {
+    font-family: 'RoadRadio';
+    font-size: 15px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.projects__text h3 {
+    margin-top: 10px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.project__discover {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #FDDD0A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 100%;
+    color: #1A1A1A;
+    font-weight: 700;
+    font-family: 'RoadRadio';
+    cursor: pointer;
+    top: -150px;
+}
+
+
+.project__cases {
+    transition: all 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    border: 1px solid #818181;
+    gap: 10px;
+    color: #1A1A1A;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 700;
+    font-family: 'RoadRadio';
+    position: relative;
+    z-index: 1;
+}
+.project__arrow {
+    width: 11px;
+    height: 11px;
+}
+.project__cases::before {
+    background-color: #FDDD0A;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.3s;
+    height: 0%;
+}
+.project__cases:hover::before {
+    height: 100%;
+}
+.project__cases:hover .project__arrow {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 990px) {
+    .projects__inner {
+        grid-template-columns: 1fr;
+    }
+}

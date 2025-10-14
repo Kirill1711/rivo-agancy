@@ -1,0 +1,42 @@
+.services{
+    background-color: #F3F3F5;
+    padding: 4em 0 2em 0;
+}
+.services__wrapper {
+    margin-top: 1.5em;
+}
+.services__wrapper span {
+    display: block;
+    width: 95%;
+    height: 2px;
+    background-color: #D8D7DB;
+}
+.services__inner {
+    margin-top: 2em;
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    justify-content: space-around;
+}
+.services__title {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+}
+.services__text {
+    color: #818181;
+    font-family: 'Gilroy';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .services__inner {
+        flex-direction: column;
+        gap: 1em;
+    }
+}

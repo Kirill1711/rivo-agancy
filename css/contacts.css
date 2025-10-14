@@ -1,0 +1,225 @@
+.contacts {
+    width: 100%;
+    height: 100%;
+    padding: 4em 0;
+    background-color: #EEEEF0;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.contact-form {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-group label {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #818181;
+}
+label::after {
+    content: ' *';
+    color: red;
+}
+.form-group input {
+    width: 80%;
+    border: 1px solid #818181;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0.5em;
+
+    font-family: 'Gilroy';
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+
+.file-input {
+    position: relative;
+}
+.bracket{
+    cursor: pointer;
+    position: absolute;
+    bottom: 1em;
+    right: 20%;
+    width: 10px;
+    height: 20px;
+}
+.file-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    bottom: 12px;
+}
+
+.contact-form-submit {
+    width: 80%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1A1A1A;
+    gap: 5px;
+    
+    font-weight: 400;
+    line-height: 100%;
+    font-size: 17px;
+    color: #1A1A1A;
+    font-family: 'RoadRadio';
+
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+.contact-form-submit::before {
+    background-color: #FDDD0A;
+    position: absolute;
+    content: "";
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s;
+    width: 0%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+.submit__arrow {
+    width: 9px;
+    height: 9px;
+}
+
+.contact-form-submit:hover::before {
+    width: 100%;
+}
+.contact-form-submit:hover .submit__arrow {
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.contact-container {
+    width: 45%;
+    border: 1px solid #D8D7DB;
+    height: 100%;
+}
+.contact__info {
+    font-family: 'RoadRadio';
+    font-size: 32px;
+    line-height: 130%;
+    font-weight: 700;
+    border-bottom: 1px solid #D8D7DB;
+}
+.contact__info h2 {
+    margin: 1em;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+    border: 1px solid #D8D7DB;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact-mail {
+    padding: 0.5em;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #D8D7DB;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.contact-row h5, .contact-colum h5 {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 20px;
+    color: #1A1A1A;
+}
+.contact-row p, .contact-row a, .contact-colum p {
+    font-family: 'Gilroy';
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 15px;
+    color: #818181;
+    margin-top: 5px;
+}
+
+.contact-social {
+    display: flex;
+    gap: 1em;
+    z-index: 100;
+    justify-content: center;
+    width: 40%;
+}
+.contact-social a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-adress {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+}
+.contact-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 1em;
+}
+
+
+@media screen and (max-width: 990px) {
+    .contact__info h2 {
+        margin: 0.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__wrapper {
+        flex-direction: column;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .contact-container {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    .contacts {
+        padding: 2em;
+    }
+    .contact__info h2 {
+        margin: 5px;
+    }
+    .contact-row {
+        gap: 1em;
+    }
+}

@@ -1,0 +1,158 @@
+.home {
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home__title {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #818181;
+}
+
+.home__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+.home__inner div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.home__inner div span {
+    font-family: 'RoadRadio';
+    font-weight: 400;
+    font-size: 132px;
+    text-transform: uppercase;
+    color: #1A1A1A;
+}
+.home__img-one {
+    width: 168px;
+    height: 118px;
+    border-radius: 145px;
+    overflow: hidden;
+}
+.home__img-two {
+    width: 373px;
+    height: 118px;
+    border-radius: 101px;
+    overflow: hidden;
+    position: relative;
+}
+.home__img-tree {
+    width: 221px;
+    height: 118px;
+    overflow: hidden;
+    border-radius: 84px;
+}
+.play__video {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.play__video:hover {
+     transform: scale(1.1);
+}
+
+.home__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5em;
+    z-index: 100;
+    position: relative;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    gap: 1em;
+    z-index: 100;
+}
+.social a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: #1A1A1A;
+    border-radius: 50%;
+}
+.icon:hover {
+    background-color: #FDDD0A;
+}
+.icon:hover .change_color_icon {
+    fill: #212121;
+}
+.scroll_to_explore {
+    width: 110px;
+    height: 90px;
+    cursor: pointer;
+    display: block;
+}
+.contact_us_btn {
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    animation: rotate-round 12s linear infinite;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 1px #818181;
+}
+
+@keyframes rotate-round {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .home__inner div span {
+        font-size: 60px;
+    }
+    .home__img-one {
+        width: 72px;
+        height: 50px;
+    }
+    .home__img-two {
+       height: 50px;
+       width: 160px;
+    }
+    .home__img-tree{
+        width: 94px;
+        height: 50px;
+    }
+    .play__video {
+        width: 42px;
+        height: 42px;
+    }
+    .home__footer {
+        justify-content: center;
+        gap: 2em;
+    }
+       .scroll_to_explore {
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 450px) {
+    .home__inner div span {
+        font-size: 45px;
+    }
+}
